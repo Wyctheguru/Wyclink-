@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Wyclink Tech Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-menu">
+            <img src="logo.png" alt="Company Logo">
+            <h1>Wyclink Tech Services</h1>
+        </div>
+        <div class="menu-icon">
+            <span>☰</span>
+        </div>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ecommerce.html">Our Products</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq-list">
+            <li><strong>Q:</strong> How can I purchase your products? <br><strong>A:</strong> Visit our Products page and chat with us via WhatsApp.</li>
+            <li><strong>Q:</strong> What services do you provide? <br><strong>A:</strong> Coding, graphic design, ICT accessories, and technical support.</li>
+            <li><strong>Q:</strong> Where are you located? <br><strong>A:</strong> Nairobi, Kenya.</li>
+            <li><strong>Q:</strong> Can I customize my order? <br><strong>A:</strong> Yes, reach out via email or WhatsApp to discuss your requirements.</li>
+            <li><strong>Q:</strong> How do I contact customer support? <br><strong>A:</strong> Email us at wyclinktech@gmail.com or call +254746440138.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wyclink Tech Services</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('.dropdown-menu').classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>

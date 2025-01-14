@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu.visible {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.dropdown-menu li {
+    padding: 10px 0;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.section {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #FFEB3B, #007BFF);
+    color: white;
+    text-align: center;
+}
+
+.section h3 {
+    margin-top: 0;
+}
+
+.section p {
+    margin: 10px 0 20px;
+}
+
+.section .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section .btn:hover {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
